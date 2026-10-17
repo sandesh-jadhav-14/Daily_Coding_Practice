@@ -1,0 +1,4 @@
+SELECT emp_name, salary
+FROM employee
+ORDER BY salary DESC
+LIMIT 1;
