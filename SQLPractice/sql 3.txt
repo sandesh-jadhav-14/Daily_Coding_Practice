@@ -1,0 +1,6 @@
+. Display the name , deptname and  salary of the employee whose salary is lowest.
+
+select ename,deptname,salary
+from emp e , dept d
+where e.deptid=d.deptid
+order by salary asc limit 1;

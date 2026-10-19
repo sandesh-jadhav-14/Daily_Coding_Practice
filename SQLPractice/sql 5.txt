@@ -1,0 +1,7 @@
+
+ Display the name of all the dept and count of all the employees in that dept.
+
+select deptname,count(eid) employee_count
+from emp right join dept
+on emp.deptid=dept.deptid
+group by deptname;

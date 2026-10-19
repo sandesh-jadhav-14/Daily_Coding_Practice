@@ -1,0 +1,14 @@
+
+
+
+32. Write a query that uses a subquery to obtain all orders for the customer named Cisneros.
+Assume you do not know his customer number.
+
+
+SELECT *
+FROM orders
+WHERE cnum IN (
+    SELECT cnum
+    FROM customers
+    WHERE cname = 'Cisneros'
+);

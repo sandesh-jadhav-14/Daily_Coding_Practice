@@ -1,0 +1,6 @@
+ display the name, deptname of top five earning employees.
+
+select ename,deptname,salary
+from emp e , dept d
+where e.deptid=d.deptid
+order by salary desc limit 5;
