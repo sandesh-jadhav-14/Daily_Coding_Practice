@@ -1,0 +1,5 @@
+Question: Display departments whose average salary is greater than 50,000.
+SELECT department, AVG(salary) AS avg_salary
+FROM Employee
+GROUP BY department
+HAVING AVG(salary) > 50000;
